@@ -35,17 +35,17 @@
 		78F5FB161459A109003ED1A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		78F5FB181459A109003ED1A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78F5FB1A1459A109003ED1A0 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		78F5FB1E1459A109003ED1A0 /* iImageProcessingLibrary-Info.plist */ = {isa = PBXFileReference; path = "iImageProcessingLibrary-Info.plist"; sourceTree = "<group>"; };
+		78F5FB1E1459A109003ED1A0 /* iImageProcessingLibrary-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iImageProcessingLibrary-Info.plist"; sourceTree = "<group>"; };
 		78F5FB201459A109003ED1A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		78F5FB221459A109003ED1A0 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		78F5FB241459A109003ED1A0 /* iImageProcessingLibrary-Prefix.pch */ = {isa = PBXFileReference; path = "iImageProcessingLibrary-Prefix.pch"; sourceTree = "<group>"; };
-		78F5FB251459A109003ED1A0 /* IPAppDelegate.h */ = {isa = PBXFileReference; path = IPAppDelegate.h; sourceTree = "<group>"; };
+		78F5FB241459A109003ED1A0 /* iImageProcessingLibrary-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "iImageProcessingLibrary-Prefix.pch"; sourceTree = "<group>"; };
+		78F5FB251459A109003ED1A0 /* IPAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IPAppDelegate.h; sourceTree = "<group>"; };
 		78F5FB261459A109003ED1A0 /* IPAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IPAppDelegate.m; sourceTree = "<group>"; };
 		78F5FB2D1459A109003ED1A0 /* iImageProcessingLibraryTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iImageProcessingLibraryTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F5FB2E1459A109003ED1A0 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
-		78F5FB361459A109003ED1A0 /* iImageProcessingLibraryTests-Info.plist */ = {isa = PBXFileReference; path = "iImageProcessingLibraryTests-Info.plist"; sourceTree = "<group>"; };
+		78F5FB361459A109003ED1A0 /* iImageProcessingLibraryTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "iImageProcessingLibraryTests-Info.plist"; sourceTree = "<group>"; };
 		78F5FB381459A109003ED1A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		78F5FB3A1459A109003ED1A0 /* iImageProcessingLibraryTests.h */ = {isa = PBXFileReference; path = iImageProcessingLibraryTests.h; sourceTree = "<group>"; };
+		78F5FB3A1459A109003ED1A0 /* iImageProcessingLibraryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iImageProcessingLibraryTests.h; sourceTree = "<group>"; };
 		78F5FB3B1459A109003ED1A0 /* iImageProcessingLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iImageProcessingLibraryTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
