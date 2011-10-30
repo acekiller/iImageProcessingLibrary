@@ -3,7 +3,7 @@
 //  iImageProcessingLibrary
 //
 //  Created by Yongseok Kang on 10/27/11.
-//  Copyright (c) 2011 NHN. All rights reserved.
+//  Copyright (c) 2011 feelform.net. All rights reserved.
 //
 
 #import "IPAppDelegate.h"

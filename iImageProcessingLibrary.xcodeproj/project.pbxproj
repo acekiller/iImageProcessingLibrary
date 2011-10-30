@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7859CD8B145CFD66000EB10F /* IPImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859CD8A145CFD66000EB10F /* IPImageTests.m */; };
 		78F5FB171459A109003ED1A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F5FB161459A109003ED1A0 /* UIKit.framework */; };
 		78F5FB191459A109003ED1A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F5FB181459A109003ED1A0 /* Foundation.framework */; };
 		78F5FB1B1459A109003ED1A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F5FB1A1459A109003ED1A0 /* CoreGraphics.framework */; };
@@ -18,6 +19,7 @@
 		78F5FB311459A109003ED1A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F5FB181459A109003ED1A0 /* Foundation.framework */; };
 		78F5FB391459A109003ED1A0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 78F5FB371459A109003ED1A0 /* InfoPlist.strings */; };
 		78F5FB3C1459A109003ED1A0 /* iImageProcessingLibraryTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F5FB3B1459A109003ED1A0 /* iImageProcessingLibraryTests.m */; };
+		78F5FB441459A109003ED1A2 /* IPImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 78F5FB441459A109003ED1A1 /* IPImage.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +33,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7859CD89145CFD66000EB10F /* IPImageTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPImageTests.h; sourceTree = "<group>"; };
+		7859CD8A145CFD66000EB10F /* IPImageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPImageTests.m; sourceTree = "<group>"; };
 		78F5FB121459A109003ED1A0 /* iImageProcessingLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iImageProcessingLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F5FB161459A109003ED1A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		78F5FB181459A109003ED1A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -47,6 +51,8 @@
 		78F5FB381459A109003ED1A0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		78F5FB3A1459A109003ED1A0 /* iImageProcessingLibraryTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iImageProcessingLibraryTests.h; sourceTree = "<group>"; };
 		78F5FB3B1459A109003ED1A0 /* iImageProcessingLibraryTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = iImageProcessingLibraryTests.m; sourceTree = "<group>"; };
+		78F5FB441459A109003ED1A1 /* IPImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPImage.m; sourceTree = "<group>"; };
+		78F5FB441459A109003ED1A3 /* IPImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPImage.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,8 @@
 		78F5FB1C1459A109003ED1A0 /* iImageProcessingLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				78F5FB441459A109003ED1A3 /* IPImage.h */,
+				78F5FB441459A109003ED1A1 /* IPImage.m */,
 				78F5FB251459A109003ED1A0 /* IPAppDelegate.h */,
 				78F5FB261459A109003ED1A0 /* IPAppDelegate.m */,
 				78F5FB1D1459A109003ED1A0 /* Supporting Files */,
@@ -130,6 +138,8 @@
 				78F5FB3A1459A109003ED1A0 /* iImageProcessingLibraryTests.h */,
 				78F5FB3B1459A109003ED1A0 /* iImageProcessingLibraryTests.m */,
 				78F5FB351459A109003ED1A0 /* Supporting Files */,
+				7859CD89145CFD66000EB10F /* IPImageTests.h */,
+				7859CD8A145CFD66000EB10F /* IPImageTests.m */,
 			);
 			path = iImageProcessingLibraryTests;
 			sourceTree = "<group>";
@@ -251,6 +261,7 @@
 			files = (
 				78F5FB231459A109003ED1A0 /* main.m in Sources */,
 				78F5FB271459A109003ED1A0 /* IPAppDelegate.m in Sources */,
+				78F5FB441459A109003ED1A2 /* IPImage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78F5FB3C1459A109003ED1A0 /* iImageProcessingLibraryTests.m in Sources */,
+				7859CD8B145CFD66000EB10F /* IPImageTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,6 +426,7 @@
 				78F5FB411459A109003ED1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		78F5FB421459A109003ED1A0 /* Build configuration list for PBXNativeTarget "iImageProcessingLibraryTests" */ = {
 			isa = XCConfigurationList;
@@ -422,6 +435,7 @@
 				78F5FB441459A109003ED1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
