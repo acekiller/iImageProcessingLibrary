@@ -7,8 +7,10 @@
 #import "IPImage.h"
 
 
-@implementation IPImage {
-
+@implementation IPImage
++ (IPImage * )image:(NSString *)name
+{
+    return nil;
 }
 
 @end

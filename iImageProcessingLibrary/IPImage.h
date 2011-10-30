@@ -9,4 +9,5 @@
 
 
 @interface IPImage : NSObject
++ (IPImage * )image:(NSString *)name;
 @end

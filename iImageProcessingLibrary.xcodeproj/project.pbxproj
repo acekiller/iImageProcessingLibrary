@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		7859CD8B145CFD66000EB10F /* IPImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7859CD8A145CFD66000EB10F /* IPImageTests.m */; };
+		7859CD95145D6325000EB10F /* OCHamcrestIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7859CD94145D6325000EB10F /* OCHamcrestIOS.framework */; };
+		7859CD9D145D6AC1000EB10F /* 소녀시대.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 7859CD9A145D6A5E000EB10F /* 소녀시대.jpg */; };
 		78F5FB171459A109003ED1A0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F5FB161459A109003ED1A0 /* UIKit.framework */; };
 		78F5FB191459A109003ED1A0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F5FB181459A109003ED1A0 /* Foundation.framework */; };
 		78F5FB1B1459A109003ED1A0 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78F5FB1A1459A109003ED1A0 /* CoreGraphics.framework */; };
@@ -35,6 +37,8 @@
 /* Begin PBXFileReference section */
 		7859CD89145CFD66000EB10F /* IPImageTests.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IPImageTests.h; sourceTree = "<group>"; };
 		7859CD8A145CFD66000EB10F /* IPImageTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IPImageTests.m; sourceTree = "<group>"; };
+		7859CD94145D6325000EB10F /* OCHamcrestIOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OCHamcrestIOS.framework; path = Libraries/OCHamcrestIOS.framework; sourceTree = "<group>"; };
+		7859CD9A145D6A5E000EB10F /* 소녀시대.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "소녀시대.jpg"; sourceTree = "<group>"; };
 		78F5FB121459A109003ED1A0 /* iImageProcessingLibrary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iImageProcessingLibrary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78F5FB161459A109003ED1A0 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		78F5FB181459A109003ED1A0 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -70,6 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7859CD95145D6325000EB10F /* OCHamcrestIOS.framework in Frameworks */,
 				78F5FB2F1459A109003ED1A0 /* SenTestingKit.framework in Frameworks */,
 				78F5FB301459A109003ED1A0 /* UIKit.framework in Frameworks */,
 				78F5FB311459A109003ED1A0 /* Foundation.framework in Frameworks */,
@@ -101,6 +106,7 @@
 		78F5FB151459A109003ED1A0 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7859CD94145D6325000EB10F /* OCHamcrestIOS.framework */,
 				78F5FB161459A109003ED1A0 /* UIKit.framework */,
 				78F5FB181459A109003ED1A0 /* Foundation.framework */,
 				78F5FB1A1459A109003ED1A0 /* CoreGraphics.framework */,
@@ -140,6 +146,7 @@
 				78F5FB351459A109003ED1A0 /* Supporting Files */,
 				7859CD89145CFD66000EB10F /* IPImageTests.h */,
 				7859CD8A145CFD66000EB10F /* IPImageTests.m */,
+				78F5FB441459A109003ED1A4 /* Resources */,
 			);
 			path = iImageProcessingLibraryTests;
 			sourceTree = "<group>";
@@ -151,6 +158,14 @@
 				78F5FB371459A109003ED1A0 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		78F5FB441459A109003ED1A4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				7859CD9A145D6A5E000EB10F /* 소녀시대.jpg */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,6 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				78F5FB391459A109003ED1A0 /* InfoPlist.strings in Resources */,
+				7859CD9D145D6AC1000EB10F /* 소녀시대.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +320,73 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		7859CD8D145D607F000EB10F /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Coverage;
+		};
+		7859CD8E145D607F000EB10F /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iImageProcessingLibrary/iImageProcessingLibrary-Prefix.pch";
+				INFOPLIST_FILE = "iImageProcessingLibrary/iImageProcessingLibrary-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Coverage;
+		};
+		7859CD8F145D607F000EB10F /* Coverage */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/iImageProcessingLibrary.app/iImageProcessingLibrary";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/Libraries\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "iImageProcessingLibrary/iImageProcessingLibrary-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/OCMock/Headers";
+				INFOPLIST_FILE = "iImageProcessingLibraryTests/iImageProcessingLibraryTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Libraries/OCMock\"",
+					"\"$(SRCROOT)/Libraries/clang\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Libraries/OCMock/libOCMock.a",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Coverage;
+		};
 		78F5FB3D1459A109003ED1A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -380,10 +463,23 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/Libraries\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iImageProcessingLibrary/iImageProcessingLibrary-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/OCMock/Headers";
 				INFOPLIST_FILE = "iImageProcessingLibraryTests/iImageProcessingLibraryTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Libraries/OCMock\"",
+					"\"$(SRCROOT)/Libraries/clang\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Libraries/OCMock/libOCMock.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -397,10 +493,23 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+					"\"$(SRCROOT)/Libraries\"",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "iImageProcessingLibrary/iImageProcessingLibrary-Prefix.pch";
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/Libraries/OCMock/Headers";
 				INFOPLIST_FILE = "iImageProcessingLibraryTests/iImageProcessingLibraryTests-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(PROJECT_DIR)/Libraries/OCMock\"",
+					"\"$(SRCROOT)/Libraries/clang\"",
+				);
+				OTHER_LDFLAGS = (
+					"-lstdc++",
+					"-ObjC",
+					"-force_load",
+					"$(PROJECT_DIR)/Libraries/OCMock/libOCMock.a",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = octest;
@@ -414,6 +523,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78F5FB3D1459A109003ED1A0 /* Debug */,
+				7859CD8D145D607F000EB10F /* Coverage */,
 				78F5FB3E1459A109003ED1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -423,6 +533,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78F5FB401459A109003ED1A0 /* Debug */,
+				7859CD8E145D607F000EB10F /* Coverage */,
 				78F5FB411459A109003ED1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
@@ -432,6 +543,7 @@
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				78F5FB431459A109003ED1A0 /* Debug */,
+				7859CD8F145D607F000EB10F /* Coverage */,
 				78F5FB441459A109003ED1A0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
